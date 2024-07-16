@@ -15,13 +15,13 @@ const Hero: FC<HeroProps> = ({}) => {
             <h1 className="text-[42px] font-extrabold leading-[75.6px] tracking-[10%] text-white">
               Discover <span className="text-primary">Unique</span> Digital Art & Collectibles
             </h1>
-            <p className="text-[24px] leading-[43.2px] font-light tracking-[6%] text-white">
+            <span className="text-[24px] leading-[43.2px] font-light tracking-[6%] text-white">
               Explore, buy, and sell extraordinary NFTs on our decentralized marketplace.
-            </p>
+            </span>
             <div className="flex items-center gap-[14px]">
               <Button>Explore Now</Button>
 
-              <Button variant='ghost' size='lg'>
+              <Button variant="ghost" size="lg">
                 <Image src={PlayIcon} alt="play video icon" className="mr-[10px]" /> Watch Demo Video
               </Button>
             </div>
@@ -39,9 +39,21 @@ const Hero: FC<HeroProps> = ({}) => {
           </div>
         </div>
 
-        <Image src={HeroImage} width={557} height={553} alt="hero image" className="absolute bottom-0 right-0" />
-        <Image src={ArrowIcon} width={75} height={75} alt="arrow icon" className="absolute bottom-[16.5%] left-[57.5%]" />
-        <Image src={StarImage} width={224} height={224} alt="star image" className="absolute -top-[18%] right-[4%] -z-[1]" />
+        <Image src={HeroImage} width={557} height={553} alt="hero image" className="hidden lg:block absolute bottom-0 right-0" />
+        <Image
+          src={ArrowIcon}
+          width={75}
+          height={75}
+          alt="arrow icon"
+          className="hidden lg:block absolute bottom-[16.5%] left-[57.5%]"
+        />
+        <Image
+          src={StarImage}
+          width={224}
+          height={224}
+          alt="star image"
+          className="hidden lg:block absolute -top-[15%] right-[4%] -z-[1]"
+        />
       </div>
     </section>
   );
