@@ -34,7 +34,10 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center gap-[24px]">
-            <Image src={SearchIcon} alt="search icon" />
+            <Button variant="ghost" size="icon">
+              <Image src={SearchIcon} alt="search icon" />
+            </Button>
+
             <Button>Sign up</Button>
           </div>
         </div>
