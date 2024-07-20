@@ -22,7 +22,7 @@ const Navbar = () => {
               <ul key={id}>
                 <Link href={link} onClick={() => setActive(title)}>
                   <span
-                    className={`text-[14px] leading-[14px] font-semibold ${
+                    className={`text-[14px] leading-[14px] font-semibold font-laila ${
                       active === title ? "text-primary underline underline-offset-8" : "text-white"
                     }`}
                   >
