@@ -12,10 +12,10 @@ const Hero: FC<HeroProps> = ({}) => {
       <div className="container mx-auto w-full relative">
         <div className="flex flex-col gap-[80px] w-full max-w-[734px]">
           <div className="flex flex-col gap-[32px]">
-            <h1 className="text-[42px] font-extrabold leading-[75.6px] tracking-[10%] text-white">
+            <h1 className="text-[42px] font-extrabold leading-[75.6px] tracking-[10%] text-white font-detacher">
               Discover <span className="text-primary">Unique</span> Digital Art & Collectibles
             </h1>
-            <span className="text-[24px] leading-[43.2px] font-light tracking-[6%] text-white">
+            <span className="text-[24px] leading-[43.2px] font-light tracking-[6%] text-white font-laila">
               Explore, buy, and sell extraordinary NFTs on our decentralized marketplace.
             </span>
             <div className="flex items-center gap-[14px]">
@@ -30,7 +30,7 @@ const Hero: FC<HeroProps> = ({}) => {
           <div className="flex items-center gap-[53px]">
             {stats.map(({ id, number, desc }) => (
               <div key={id} className="flex flex-col w-[117px]">
-                <span className="text-[30px] leading-[54px] tracking-[6%] text-center text-white">
+                <span className="text-[30px] leading-[54px] tracking-[6%] text-center text-white font-detacher">
                   {number}k<span className="text-primary">+</span>
                 </span>
                 <span className="text-[16px] leading-[28.8px] tracking-[6%] text-center text-primary">{desc}</span>

@@ -19,6 +19,10 @@ const config: Config = {
         primary: "#B624A9",
         secondary: "#020204",
       },
+      fontFamily: {
+        laila: "var(--font-laila)",
+        detacher: "var(--font-detacher)",
+      },
     },
   },
   plugins: [],
